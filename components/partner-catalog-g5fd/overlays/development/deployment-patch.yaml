@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-g5fd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/fduthill-tenant/partner-catalog-1/partner-catalog-g5fd@sha256:c3c27c3ff53ac0dd0439623e966c22181c1fad92d136e2c3c8e11fcf366e3200
+        name: my-java-springboot
+        resources: {}
+status: {}
